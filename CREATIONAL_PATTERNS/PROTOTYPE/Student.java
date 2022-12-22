@@ -16,13 +16,17 @@ public class Student implements ProtoType {
     double averageBatchPSP;
     double studentPSP;
 
+    public Student() {}
+
+    public Student(Student student) {
+        
+        this.batch = student.batch;
+    }
+
     @Override
     public Student clone()  {
         
-        Student copy = new Student();
-        copy.batch = this.batch;
-        
-        return copy;
+        return new Student(this);
     }
 
     public static void print(Student student)   {
