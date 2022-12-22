@@ -28,11 +28,4 @@ public class Student implements ProtoType {
         
         return new Student(this);
     }
-
-    public static void print(Student student)   {
-        
-        System.out.println(student.age+" "+student.name+" "+student.batch+" "+student.averageBatchPSP+" "+student.studentPSP);
-    }
-
-
 }
